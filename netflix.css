@@ -1,10 +1,53 @@
+body
+{
+background: #000;;
+color: #fff;
+}
+
+#lang
+{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 7px 10px;
+    position: absolute;
+    margin-top: -580px;
+    margin-left: 900px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#lang img
+{
+    width: 10px;
+    margin-left: 10px;
+}
+#lang1
+{
+    background-color: red;
+    border-radius: 4px;
+    position: absolute;
+    margin-top: -580px;
+    margin-left: 1000px;
+    color: white;
+    font-size: 15px;
+    border-radius: 4px;
+    width: 80px;
+    padding: 5px 10px;
+}
+
 .section1
 {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
-    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/c1366fb4-3292-4428-9639-b73f25539794/3417bf9a-0323-4480-84ee-e1cb2ff0966b/IN-en-20240408-popsignuptwoweeks-perspective_alpha_website_large.jpg);
-    height: 800px;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(https://assets.nflxext.com/ffe/siteui/vlv3/c1366fb4-3292-4428-9639-b73f25539794/3417bf9a-0323-4480-84ee-e1cb2ff0966b/IN-en-20240408-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    
+    height: 100vh;
+    width: 100%;
     background-size: cover;
     background-position: center;
+    padding: 10px 8%;
+    position: relative;
 }
 #seperation
 {
@@ -25,38 +68,39 @@
     font-size: 48px;
     color: white;
     position: absolute;
-    margin-top: -400px;
-margin-left: 175px;  
+    margin-top: -300px;
+    margin-left: 175px;  
 }
 #banner1
 {
     
     color: white;
     position: absolute;
-    margin-top: -325px;
-margin-left: 420px;  
+    margin-top: -225px;
+    margin-left: 420px;  
 }
 #banner2
 {
     
     color: white;
     position: absolute;
-    margin-top: -270px;
-margin-left: 195px;  
+    margin-top: -170px;
+margin-left: 295px;  
 }
 #logo
 {
     height: 75px;
     position: absolute;
-    margin-top: -680px;
+    margin-top: -600px;
     margin-left: 95px;
+    cursor: pointer;
 }
 #banner3
 {
     height: 50px;
     width: 300px;
     position: absolute;
-    margin-top: -220px;
+    margin-top: -120px;
     margin-left: 300px;
     background-color: transparent;
     color:gray;
@@ -66,7 +110,7 @@ margin-left: 195px;
     height: 50px;
     width: 250px;
     position: absolute;
-    margin-top: -220px;
+    margin-top: -120px;
     margin-left: 610px;
     background-color: rgb(229, 9, 20);
     color: white;
@@ -146,6 +190,8 @@ margin-left: 195px;
     position: absolute;
     margin-top: 55px;
     margin-left: 640px;
+    font-size: 3rem;
+    font-weight: 900;
 }
 #ha2
 {
@@ -238,4 +284,190 @@ margin-left: 195px;
     position: absolute;
     margin-top: 240px;
     margin-left: 640px;
+}
+
+ul
+{
+    list-style: none;
+    line-height: 35px;
+    cursor: pointer;
+}
+
+#ft1
+{
+    position: absolute;
+    margin-left: 800px;
+    margin-top: 40px;
+}
+
+#ft2
+{
+    position: absolute;
+    margin-left: 600px;
+    margin-top: 40px;
+}
+#ft3
+{
+    position: absolute;
+    margin-left: 400px;
+    margin-top: 40px
+    
+    
+}
+#ft4
+{
+    position: absolute;
+    background-color: black;
+    margin-left: 100px;
+    color: rgba(255, 255, 255, .7);
+
+}
+#fot
+{
+    background-color: black;
+    height: 300px;
+    color:rgba(255, 255, 255, .7);
+}
+#dem
+{
+    color: white;
+    border-radius: 0px;
+    height: 50px;
+    width: 1000px;
+    text-align: left;
+    padding-top: 15px;
+}
+#demo
+{
+    background-color: rgba(96, 93, 93,.25);
+    font-size: 1.5em;
+}
+.faq
+{
+    height: 850px;
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    background-color: black;
+}
+
+.faq h1
+{
+    font-weight: 900;
+}
+.accordion
+{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+
+.accordion li
+{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.accordion li label
+{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+label::after
+{
+    content: '+' ;
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+
+input[type="radio"]
+{
+    display: none;
+}
+
+.accordion .content
+{
+    background: #303030;
+    background-color: #303030;
+    color: white;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+.accordion .content pre
+{
+    background-color: #303030; 
+    color: white;
+    border: none;
+}
+
+.accordion input[type="radio"]:checked + label + .content
+{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.accordion input[type="radio"]:checked + label::after
+{
+    transform: rotate(135deg);
+}
+
+#baner2
+{
+    
+    color: white;
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 190px;  
+}
+
+#baner3
+{
+    height: 50px;
+    width: 300px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left:-270px;
+    background-color: transparent;
+    color:gray;
+    border-radius: 5px;
+}
+#baner4
+{
+    height: 50px;
+    width: 250px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 40px;
+    background-color: rgb(229, 9, 20);
+    color: white;
+    font-size: larger;
+    border-radius: 5px;
+    
+}
+#lan
+{
+    background: black;
+    width: 100px;
+    color: white;
+    padding: 0px;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+#lan img
+{
+    width: 10px;
 }
